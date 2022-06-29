@@ -4,6 +4,8 @@
 
     #main-header{
         text-align:center;
+        float:left;
+        overflow:hidden;
     }
 
     #logo{
