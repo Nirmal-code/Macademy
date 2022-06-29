@@ -12,9 +12,9 @@ export default function Header(){
                     <li><img id='logo' src={logo}></img></li>
                     <li><Link to='../../home/home/' id='title'><h1>MACademy</h1></Link></li>
                     <li><Link to='../../home/home/' id="menu-item"><h3>Home</h3></Link></li>
-                    <li><Link to='../../planner/planner/' id="menu-item"><h3> Planner</h3></Link></li>
-                    <li><Link to='../../timer/timer/' id="menu-item"><h3> Interval Studying</h3></Link></li>
-                    <li><Link to='../../gpa/gpa/' id="menu-item"><h3> GPA Tracker</h3></Link></li>
+                    <li><Link to='../../planner/planner/' id="menu-item"><h3>Planner</h3></Link></li>
+                    <li><Link to='../../timer/timer/' id="menu-item"><h3>Interval Studying</h3></Link></li>
+                    <li><Link to='../../gpa/gpa/' id="menu-item"><h3>GPA Tracker</h3></Link></li>
                 </ul>
 
             </navbar>
