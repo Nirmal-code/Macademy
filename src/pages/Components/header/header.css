@@ -1,6 +1,6 @@
 
 /* Very Small Devices, Phones */
-@media only screen and (min-width:360px) and (max-width:767px){
+@media only screen and (max-width:767px){
 
     #main-header{
         text-align:center;
@@ -22,9 +22,7 @@
 
     #title{
         display:none;
-
     }
-
 }
 
 /* Small Devices, Tablets */
@@ -132,17 +130,10 @@
 #main-header{
     height:fit-content;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width:90vw;
-    margin-left:25%;
 }
 
 #logo{
-    object-fit:contain;
     cursor:pointer;
-    display:absolute;
-    justify-content:center;
-    align-items:center;
-    margin:auto;
     vertical-align: middle;
 }
 
@@ -150,8 +141,6 @@ ul{
     list-style-type: none;
     display:block;
     overflow:hidden;
-    margin:0;
-    position:relative;
 }
 
 li{
@@ -166,7 +155,6 @@ li Link{
 #menu-item{
     text-decoration:none;
     color:black;
-    vertical-align: middle;
 }
 
 #title{
