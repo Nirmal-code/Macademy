@@ -1,44 +1,160 @@
-#title{
+
+/* Very Small Devices, Phones */
+@media only screen and (min-width:360px) and (max-width:767px){
+
+    #main-header{
+        text-align:center;
+    }
+
+    #logo{
+        height:30px;
+        width:30px;
+        border-radius:15px;
+    }
+
+    h3{
+        padding-left:9px;
+        padding-right:9px;
+        margin-top:40px;
+        font-size:12px;
+    }
+
+    #title{
+        font-size:10px;
+
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width:768px) and (max-width:1260px){
+
+    #main-header{
+        text-align:center;
+    }
+
+    #logo{
+        height:50px;
+        width:50px;
+        border-radius:15px;
+    }
+
+    h3{
+        padding-left:28px;
+        padding-right:28px;
+        margin-top:40px;
+        font-size:15px;
+    }
+
+    #title{
+        font-size:15px;
+    }
+
+}
+
+/*Medium Devices, Laptops*/
+@media only screen and (min-width:1261px) and (max-width:1500px){
+
+    #main-header{
+        text-align:center;
+    }
+
+    #logo{
+        width:70px;
+        height:70px;
+        padding:10px;
+        border-radius:30px;
+    }
+
+    #main-header{
+        margin-left:20%;
+    }
+
+
+
+    h3{
+        padding-left:49px;
+        padding-right:49px;
+        margin-left:50px;
+        margin-top:0px;
+    }
+}
+
+
+/* Large Devices, Desktops */
+@media only screen and (min-width:1501px){
+
+    #main-header{
+        text-align:center;
+    }
+
+    #logo{
+        width:70px;
+        height:70px;
+        padding:10px;
+        border-radius:30px;
+    }
+
+    #main-header{
+        margin-left:20%;
+    }
+
+
+
+    h3{
+        padding-left:90px;
+        padding-right:100px;
+        margin-left:50px;
+        margin-top:50px;
+        font-size: 22px;
+    }
+
+    #title{
+        font-size:25px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+#header-wrap{
+    width:100%;
+}
+
+#main-header{
+    height:fit-content;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:black;
-    font-size: 20px;
-    text-decoration:none;
-    position:absolute;
-    top:5%;
-    margin-left:75px;
+    width:90vw;
+    margin-left:25%;
 }
 
 #logo{
-    width:70px;
-    height:70px;
-    border-radius: 20px;
-    margin-right:20%;
+    object-fit:contain;
+    cursor:pointer;
+    display:absolute;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    vertical-align: middle;
+}
+
+ul{
+    list-style-type: none;
+    display:block;
+    overflow:hidden;
+    margin:0;
     position:relative;
 }
 
-#titlelogo{
-    width:fit-content;
-    height:fit-content;
-    display:block;
-    margin-left:6%;
-    margin-top:3%;
-
-}
-
-
-ul{
-    list-style-type:none;
-    overflow:hidden;
-    margin:0;
-    position:absolute;
-    left:25%;
-    top:1%;
-    display:block;
-    
-}
-
 li{
-    float:left;
+    display:inline-block;
 }
 
 li Link{
@@ -46,18 +162,17 @@ li Link{
     text-decoration:none;
 }
 
-h3{
-    padding:60px;
-}
-
-h3:hover{
-    text-shadow:2px 2px 5px purple;
-}
-
-
 #menu-item{
     text-decoration:none;
     color:black;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    vertical-align: middle;
+}
+
+#title{
+    text-decoration:none;
+    color:black;
+}
+
+h3:hover{
+    text-shadow:2px 2px 5px maroon;
 }
