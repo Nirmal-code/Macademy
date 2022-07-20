@@ -1,9 +1,9 @@
 
 /* Very Small Devices, Phones */
 @media only screen and (max-width:767px){
-
-   #main-header{
-        text-align:center;
+   
+   #header-wrap{
+      align-items:center;
     }
 
     #logo{
