@@ -1,25 +1,40 @@
-
 /* Very Small Devices, Phones */
-@media only screen and (max-width:767px){
-   
-   #header-wrap{
-      align-items:center;
+@media only screen and (max-width:769px){
+
+    
+    #main-header{
+        text-align: center;
+    }
+
+    #header-wrap{
+        background-color:rgba(255, 255, 255, 0.8);
+        margin-top:0%;
+        height:50px;
     }
 
     #logo{
         display:none;
     }
 
-    h3{
-        padding:10px;
-        font-size:15px;
-        border:1px solid;
-        background-color: rgb(206, 206, 206);
+    #icon{
+        width:30px;
+        height:30px;
+        padding-right:38px;
+        margin-bottom:-10px;
     }
 
+    h3{
+        padding-right:40px;
+        font-size:10px;
+        text-decoration: none;
+    }
+    
     #title{
         display:none;
     }
+
+
+
 }
 
 /* Small Devices, Tablets */
@@ -46,6 +61,11 @@
         font-size:15px;
     }
 
+    #icon{
+        display:none;
+    }
+
+
 }
 
 /*Medium Devices, Laptops*/
@@ -67,13 +87,16 @@
     }
 
 
-
     h3{
         padding-left:49px;
         padding-right:49px;
         margin-left:50px;
         margin-top:0px;
     }
+    #icon{
+        display:none;
+    }
+
 }
 
 
@@ -83,6 +106,7 @@
     #main-header{
         text-align:center;
     }
+
 
     #logo{
         width:70px;
@@ -109,16 +133,17 @@
         font-size:25px;
     }
 
+    #icon{
+        display:none;
+    }
+
+
 }
 
 
-
-
-
-
-
-
-
+li{
+    display:inline-block;
+}
 
 #header-wrap{
     width:100%;
@@ -140,9 +165,6 @@ ul{
     overflow:hidden;
 }
 
-li{
-    display:inline-block;
-}
 
 li Link{
     display:block;
