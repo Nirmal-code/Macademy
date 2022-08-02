@@ -184,3 +184,7 @@ li Link{
 h3:hover{
     text-shadow:2px 2px 5px maroon;
 }
+
+#menu-item.active{
+    text-decoration: underline;
+}
