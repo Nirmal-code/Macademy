@@ -1,3 +1,4 @@
+
 /* Very Small Devices, Phones */
 @media only screen and (max-width:769px){
 
@@ -7,7 +8,6 @@
     }
 
     #header-wrap{
-        background-color:rgba(255, 255, 255, 0.8);
         margin-top:0%;
         height:50px;
     }
@@ -34,6 +34,11 @@
     }
 
 
+    #time{
+        display:none;
+    }
+
+
 
 }
 
@@ -51,10 +56,14 @@
     }
 
     h3{
-        padding-left:28px;
-        padding-right:28px;
+        padding-left:20px;
+        padding-right:20px;
         margin-top:40px;
         font-size:15px;
+    }
+
+    h1{
+        padding-right:50px;
     }
 
     #title{
@@ -63,6 +72,11 @@
 
     #icon{
         display:none;
+    }
+
+    #time{
+        font-size:15px;
+        padding-left:50px;
     }
 
 
@@ -88,17 +102,27 @@
 
 
     h3{
-        padding-left:49px;
-        padding-right:49px;
+        padding-left:10px;
+        padding-right:20px;
         margin-left:50px;
         margin-top:0px;
     }
+
+    h1{
+        padding-right:200px;
+    }
+
     #icon{
         display:none;
     }
 
-}
+    #time{
+        font-size:20px;
+        padding-left:100px;
+    }
 
+
+}
 
 /* Large Devices, Desktops */
 @media only screen and (min-width:1501px){
@@ -106,6 +130,7 @@
     #main-header{
         text-align:center;
     }
+
 
 
     #logo{
@@ -122,11 +147,20 @@
 
 
     h3{
-        padding-left:90px;
-        padding-right:100px;
+        padding-left:10px;
+        padding-right:30px;
         margin-left:50px;
         margin-top:50px;
         font-size: 22px;
+    }
+
+    h1{
+        padding-right:250px;
+    }
+
+    #time{
+        padding-left:150px;
+        font-size:18px;
     }
 
     #title{
@@ -136,7 +170,6 @@
     #icon{
         display:none;
     }
-
 
 }
 
@@ -173,7 +206,7 @@ li Link{
 
 #menu-item{
     text-decoration:none;
-    color:black;
+    color:rgb(255, 255, 255);
 }
 
 #title{
@@ -182,9 +215,14 @@ li Link{
 }
 
 h3:hover{
-    text-shadow:2px 2px 5px maroon;
+    text-shadow:2px 2px 5px green;
 }
 
 #menu-item.active{
     text-decoration: underline;
+}
+
+#time{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
 }
