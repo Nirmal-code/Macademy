@@ -1,12 +1,16 @@
 import React from 'react';
 import Header from '../Components/header/header';
+import Footer from '../Components/footer/footer';
+import './timer.css';
 
 
 export default function TimerPage(){
     return(
-        <div>
+        <div id="timer">
             <Header />
-            <h1>This is the Timer Page!!</h1>cd 
+            <title>Macademy-Interval Studying</title>
+            <h1>This is the Timer Page!!</h1>
+            <Footer />
         </div>
     );
 };
