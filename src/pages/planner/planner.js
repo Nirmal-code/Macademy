@@ -1,10 +1,11 @@
 import React from 'react';
 import Header from '../Components/header/header';
-import './planner.css';
+import Footer from '../Components/footer/footer';
+import './planner.css'
 
 export default function PlannerPage(){
     return(
-        <div>
+        <div id="planner">
             <Header />
             <title>Macademy-Planner</title>
             <h1>This is the Planner Page!</h1>
