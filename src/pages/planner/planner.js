@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../Components/header/header'
+import Header from '../Components/header/header';
 import './planner.css';
 
 export default function PlannerPage(){
