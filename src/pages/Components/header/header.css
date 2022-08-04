@@ -1,4 +1,3 @@
-
 /* Very Small Devices, Phones */
 @media only screen and (max-width:769px){
 
@@ -7,9 +6,14 @@
         text-align: center;
     }
 
-    #header-wrap{
-        margin-top:0%;
-        height:50px;
+
+    #menu-holder{
+        text-align:center;
+        margin-top:-55px;
+        height:60px;
+        padding-top:20px;
+        background-color: rgb(89, 43, 226);
+
     }
 
     #logo{
@@ -37,33 +41,39 @@
     #time{
         display:none;
     }
-
-
-
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width:768px) and (max-width:1260px){
+
+    #header-wrap{
+        background-color: rgb(89, 43, 226);
+    }
 
     #main-header{
         text-align:center;
     }
 
     #logo{
-        height:50px;
-        width:50px;
+        height:40px;
+        width:40px;
         border-radius:15px;
+        margin-top:-15px;
+    }
+
+    #logoname{
+        margin-top:-3px;
+    }
+
+    #menu-holder{
+        text-align:right;
+        padding-right:40px;
+        margin-top:-80px;
     }
 
     h3{
-        padding-left:20px;
-        padding-right:20px;
-        margin-top:40px;
+        padding-right:40px;
         font-size:15px;
-    }
-
-    h1{
-        padding-right:50px;
     }
 
     #title{
@@ -79,38 +89,43 @@
         padding-left:50px;
     }
 
-
 }
 
 /*Medium Devices, Laptops*/
 @media only screen and (min-width:1261px) and (max-width:1500px){
+
+    #header-wrap{
+        background-color:rgb(89, 43, 226);
+        height:80px;
+
+    }
 
     #main-header{
         text-align:center;
     }
 
     #logo{
-        width:70px;
-        height:70px;
-        padding:10px;
-        border-radius:30px;
+        width:55px;
+        height:55px;
+        border-radius:20px;
+        margin-top:-20px;
     }
 
-    #main-header{
-        margin-left:20%;
+    #logoname{
+        margin-top:0px;
+    }
+
+    #menu-holder{
+        text-align:right;
+        padding-right:50px;
+        margin-top:-90px;
     }
 
 
     h3{
-        padding-left:10px;
-        padding-right:20px;
-        margin-left:50px;
-        margin-top:0px;
+        padding-right:50px;
     }
 
-    h1{
-        padding-right:200px;
-    }
 
     #icon{
         display:none;
@@ -118,48 +133,53 @@
 
     #time{
         font-size:20px;
-        padding-left:100px;
+        padding-left:170px;
     }
-
 
 }
 
 /* Large Devices, Desktops */
 @media only screen and (min-width:1501px){
 
+    #header-wrap{
+        background-color:rgb(89, 43, 226);
+        height:110px;
+    }
+
     #main-header{
         text-align:center;
     }
 
 
-
     #logo{
         width:70px;
         height:70px;
-        padding:10px;
         border-radius:30px;
+        margin-top:-30px;
     }
 
     #main-header{
         margin-left:20%;
     }
 
+    #menu-holder{
+        padding-right:75px;
+        margin-top:-120px;
+    }
 
+    #logoname{
+        margin-top:-25px;
+
+    }
 
     h3{
-        padding-left:10px;
-        padding-right:30px;
-        margin-left:50px;
-        margin-top:50px;
+        padding-right:90px;
         font-size: 22px;
     }
 
-    h1{
-        padding-right:250px;
-    }
 
     #time{
-        padding-left:150px;
+        padding-left:200px;
         font-size:18px;
     }
 
@@ -169,6 +189,10 @@
 
     #icon{
         display:none;
+    }
+
+    #menu-holder{
+        text-align:right;
     }
 
 }
@@ -204,6 +228,11 @@ li Link{
     text-decoration:none;
 }
 
+
+#logoname{
+    text-align:left;
+}
+
 #menu-item{
     text-decoration:none;
     color:rgb(255, 255, 255);
@@ -211,11 +240,12 @@ li Link{
 
 #title{
     text-decoration:none;
-    color:black;
+    color:white;
+    font-family:Lucida Handwriting;
 }
 
 h3:hover{
-    text-shadow:2px 2px 5px green;
+    text-shadow:2px 2px 5px rgb(255, 242, 3);
 }
 
 #menu-item.active{
