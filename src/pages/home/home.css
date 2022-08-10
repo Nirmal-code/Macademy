@@ -1,3 +1,15 @@
+@media screen and (orientation:portrait){
+    html{
+        transform:rotate(-90deg);
+        transform-origin:left top;
+        width:100vh;
+        overflow-x:hidden;
+        position:absolute;
+        top:100%;
+        left:0;
+    }
+}
+
 @media only screen and (max-width:769px){
     #main-caption{
         font-size:40px;
