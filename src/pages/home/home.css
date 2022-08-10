@@ -29,7 +29,7 @@
         padding:15px;
         font-size:25px;
         font-weight: 500;
-        margin-top:440px;
+        margin-top:460px;
         border-radius:10px;
         font-weight: 550;
     }
@@ -43,12 +43,11 @@
     #description_table{
         float:center;
         width:400px;
-        margin-top:auto;
         margin-bottom:auto;
         border-radius: 20px;
         margin-left:auto;
         margin-right:auto;
-        margin-top:200px;
+        margin-top:110px;
     }
 
     td{
