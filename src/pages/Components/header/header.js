@@ -12,7 +12,7 @@ import gpa_icon from '../../../images/gpa_icon.png';
 export default function Header(){
 
     const date=new Date()
-    var current_date=date.getMonth()+'/'+date.getDay()+'/'+date.getFullYear()
+    var current_date=(date.getMonth()+1)+'/'+date.getDate()+'/'+date.getFullYear()
 
     return(
         
