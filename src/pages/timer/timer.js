@@ -6,52 +6,63 @@ import './timer.css';
 
 export default function TimerPage(){
 
+    var isPaused=false;
+    var isStopped=false;
+
+    var x;
+
+
     const date=new Date()
+
+    function pause(){
+        isPaused=true;
+    }
+
+    function resume(){
+        isPaused=false;
+    }
+
+    function stop(){
+        isStopped=true;
+    }
+
 
     function getData(){
 
-        var hour=parseInt(document.getElementById('hours').value)+1;
+        var hour=parseInt(document.getElementById('hours').value);
         var minute=parseInt(document.getElementById('mins').value);
         var second=parseInt(document.getElementById('secs').value);
 
-        var new_month=date.getMonth()+1;
-        var new_day=date.getDate()+1;
-        var new_year=date.getFullYear()+1;
+        isPaused=false;
+        isStopped=false;
 
-
-        var new_hour=hour+date.getHours()-1;
-        if (new_hour>=24){
-            new_hour=new_hour-24;
-            new_day=new_day+1;
-        }
-
-        var new_minute=minute+date.getMinutes();
-        if (new_minute>60){
-            new_minute=new_minute-60;
-            new_hour=new_hour+1;
-        }
-
-        var new_second=second+date.getSeconds()+7;
-        if (new_second>60){
-            new_second=new_second-60;
-            new_minute=new_minute+1;
-        }
-
-        var countDownDate=new Date((new_month)+" "+(new_day)+", "+(new_year)+" "+new_hour+":"+new_minute+":"+new_second);
         
-        var x=setInterval(() => {
-            var now = new Date().getTime();
-            var distance = countDownDate - now;            
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-            document.getElementById("reciever").innerHTML = hours + "h "
-                    + minutes + "m " + seconds + "s ";
-            
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("reciever").innerHTML = "EXPIRED";
+        x=setInterval(() => {
+            if (!isPaused){
+                second=second-1
+
+                if (second<=0){
+                    minute=minute-1
+                    if (minute<0){
+                        hour=hour-1
+                        minute=59
+                    }
+                    second=59;
+                }
+                
+                document.getElementById("reciever").innerHTML = hour + "h "
+                        + minute + "m " + second + "s ";
+                
+                if (hour==0 && minute==0 && second==0){
+                    clearInterval(x);
+                    document.getElementById("reciever").innerHTML = "EXPIRED";
+                }
+
+                if (isStopped==true) {
+                    clearInterval(x);
+                    document.getElementById("reciever").innerHTML = "EXPIRED";
+                }
+
             }
         }, 1000);
     
@@ -69,7 +80,12 @@ export default function TimerPage(){
                 <input id='mins' type='number'></input>min
                 <input id='secs' type='number'></input>sec
             </form>
-            <button id="starter_btn" onClick={getData}>Add</button>
+            <button id="starter_btn" onClick={getData}>Start</button>
+            <button id="pause_btn" onClick={pause}>Pause</button>
+            <button id="resume_btn" onClick={resume}>Resume</button>
+            <button id="stop_btn" onClick={stop}>Stop</button>
+
+
             <Footer />
         </div>
     );
