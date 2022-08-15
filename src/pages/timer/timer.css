@@ -1,3 +1,4 @@
+
 #timer{
     min-width:100%;
     min-height:100%;
@@ -9,4 +10,16 @@
     top:0px;
     left:0px;
     position:absolute;
+}
+
+#countdown_info{
+    margin-top:150px;
+}
+
+#reciever{
+    margin-top:150px;
+}
+
+#countsubmit{
+    margin-top:150px;
 }
