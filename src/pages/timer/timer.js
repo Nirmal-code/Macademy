@@ -6,11 +6,7 @@ import './timer.css';
 
 export default function TimerPage(){
 
-    
-
     const date=new Date()
-
-
 
     function getData(){
 
@@ -69,9 +65,9 @@ export default function TimerPage(){
             <p id='reciever'></p>
 
             <form id='countdown_info' onsubmit="return false">
-                <input id='hours' type='text'></input>h
-                <input id='mins' type='text'></input>min
-                <input id='secs' type='text'></input>sec
+                <input id='hours' type='number'></input>h
+                <input id='mins' type='number'></input>min
+                <input id='secs' type='number'></input>sec
             </form>
             <button id="starter_btn" onClick={getData}>Add</button>
             <Footer />
