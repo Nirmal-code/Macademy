@@ -16,10 +16,108 @@
     margin-top:150px;
 }
 
-#reciever{
-    margin-top:150px;
+
+input{
+    width:75px;
+    height:40px;
+    font-size:40px;
+    text-align:center;
+    vertical-align:bottom;
+    border-top:none;
+    border-left:none;
+    border-right:none;
 }
 
-#countsubmit{
-    margin-top:150px;
+#countdown_info{
+    font-size:40px;
+    background-color:white;
+    height:90px;
+    width:700px;
+    padding:20px;
+    border-radius:15px;
+    position:relative;
+    left:50%;
+    margin-left:-350px;
 }
+
+#reciever{
+    font-size:150px;
+    margin-top:150px;
+    background-color:white;
+    width:100%;
+    text-align:center;
+    border-radius:30px;
+    padding:10px;
+}
+
+#all_btn{
+    margin-top:-100px;
+    position:relative;
+    left:50%;
+    margin-left:-600px;
+}
+
+#stop_btn{
+    pointer-events:none;
+}
+
+#resume_btn{
+    pointer-events:none;
+}
+
+#pause_btn{
+    pointer-events:none;
+}
+
+#starter_btn{
+    font-size:40px;
+    padding:20px;
+    border-radius:5px;
+    width:300px;
+    background-color:rgb(144, 238, 144);
+}
+
+#starter_btn:hover{
+    background-color:green;
+    cursor:pointer;
+}
+
+#stop_btn{
+    font-size:40px;
+    padding:20px;
+    border-radius:5px;
+    width:300px;
+    background-color:rgb(220, 20, 60);
+}
+
+#stop_btn:hover{
+    background-color:red;
+    cursor:pointer;
+}
+
+#pause_btn{
+    font-size:40px;
+    padding:20px;
+    border-radius:5px;
+    width:300px;
+    background-color:rgb(100, 149, 237);
+}
+
+#pause_btn:hover{
+    background-color:blue;
+    cursor:pointer;
+}
+
+#resume_btn{
+    font-size:40px;
+    padding:20px;
+    border-radius:5px;
+    width:300px;
+    background-color:rgb(100, 149, 237);
+}
+
+#resume_btn:hover{
+    background-color:blue;
+    cursor:pointer;
+}
+
