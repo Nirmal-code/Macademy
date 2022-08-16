@@ -16,14 +16,32 @@ export default function TimerPage(){
 
     function pause(){
         isPaused=true;
+        document.getElementById("resume_btn").style.pointerEvents='auto';
+        document.getElementById("pause_btn").style.pointerEvents='none';
+        document.getElementById("stop_btn").style.pointerEvents='none';
+
+
     }
 
     function resume(){
         isPaused=false;
+        document.getElementById("resume_btn").style.pointerEvents='none';
+        document.getElementById("pause_btn").style.pointerEvents='auto';
+        document.getElementById("stop_btn").style.pointerEvents='auto';
+
+
     }
 
     function stop(){
         isStopped=true;
+        document.getElementById("starter_btn").style.pointerEvents='auto';
+        document.getElementById("resume_btn").style.pointerEvents='none';
+        document.getElementById("pause_btn").style.pointerEvents='none';
+        document.getElementById("stop_btn").style.pointerEvents='none';
+
+
+
+
     }
 
     function getData2(){
@@ -71,6 +89,9 @@ export default function TimerPage(){
 
     function getData(){
 
+        document.getElementById("starter_btn").style.pointerEvents='none';
+        document.getElementById("pause_btn").style.pointerEvents='auto';
+        document.getElementById("stop_btn").style.pointerEvents='auto';
 
         var hour=parseInt(document.getElementById('hours').value);
         var minute=parseInt(document.getElementById('mins').value);
@@ -95,7 +116,7 @@ export default function TimerPage(){
                 }
                 
                 document.getElementById("reciever").innerHTML = hour + "h "
-                        + minute + "m " + second + "s ";
+                        + minute + "min " + second + "sec ";
                 
                 if (hour<0){
                     clearInterval(x);
@@ -128,12 +149,14 @@ export default function TimerPage(){
                 <input id='b_secs' type='number'></input>sec
             </form>
 
-            <button id="starter_btn" onClick={getData}>Start</button>
-            <button id="pause_btn" onClick={pause}>Pause</button>
-            <button id="resume_btn" onClick={resume}>Resume</button>
-            <button id="stop_btn" onClick={stop}>Stop</button>
+            <p id='reciever'>__h __min __sec</p>
 
-            <p id='reciever'></p>
+            <div id='all_btn'>
+                <button id="starter_btn" onClick={getData}>Start</button>
+                <button id="pause_btn" onClick={pause}>Pause</button>
+                <button id="resume_btn" onClick={resume}>Resume</button>
+                <button id="stop_btn" onClick={stop}>Stop</button>
+            </div>
 
 
 
