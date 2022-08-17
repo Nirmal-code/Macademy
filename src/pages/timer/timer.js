@@ -11,7 +11,6 @@ export default function TimerPage(){
 
     var x;
 
-
     const date=new Date()
 
     function pause(){
@@ -19,8 +18,6 @@ export default function TimerPage(){
         document.getElementById("resume_btn").style.pointerEvents='auto';
         document.getElementById("pause_btn").style.pointerEvents='none';
         document.getElementById("stop_btn").style.pointerEvents='none';
-
-
     }
 
     function resume(){
@@ -28,8 +25,6 @@ export default function TimerPage(){
         document.getElementById("resume_btn").style.pointerEvents='none';
         document.getElementById("pause_btn").style.pointerEvents='auto';
         document.getElementById("stop_btn").style.pointerEvents='auto';
-
-
     }
 
     function stop(){
@@ -38,10 +33,6 @@ export default function TimerPage(){
         document.getElementById("resume_btn").style.pointerEvents='none';
         document.getElementById("pause_btn").style.pointerEvents='none';
         document.getElementById("stop_btn").style.pointerEvents='none';
-
-
-
-
     }
 
     function getData2(){
@@ -52,6 +43,7 @@ export default function TimerPage(){
         isPaused=false;
         isStopped=false;
 
+        document.getElementById("nb_reciever").innerHTML="Break Time!"
         
         x=setInterval(() => {
             if (!isPaused){
@@ -73,12 +65,15 @@ export default function TimerPage(){
                 if (b_hour<0){
                     clearInterval(x);
                     document.getElementById("reciever").innerHTML = "Stop Procrastinating now :)";
+                    document.getElementById("nb_reciever").innerHTML="Study Time!"
                     getData()
                 }
 
                 if (isStopped==true) {
                     clearInterval(x);
                     document.getElementById("reciever").innerHTML = "EXPIRED";
+                    document.getElementById("nb_reciever").innerHTML="Timer Stopped."
+
                 }
 
             }
@@ -100,7 +95,8 @@ export default function TimerPage(){
         isPaused=false;
         isStopped=false;
 
-        
+        document.getElementById("nb_reciever").innerHTML="Study Time!"
+
         x=setInterval(() => {
             if (!isPaused){
                 second=second-1
@@ -121,6 +117,7 @@ export default function TimerPage(){
                 if (hour<0){
                     clearInterval(x);
                     document.getElementById("reciever").innerHTML = "Enjoy Your Break :)";
+                    document.getElementById("nb_reciever").innerHTML="Break Time!"
                     getData2();
 
                 }
@@ -128,6 +125,7 @@ export default function TimerPage(){
                 if (isStopped==true) {
                     clearInterval(x);
                     document.getElementById("reciever").innerHTML = "EXPIRED";
+                    document.getElementById("nb_reciever").innerHTML="Timer Stopped."
                 }
 
             }
@@ -149,6 +147,8 @@ export default function TimerPage(){
                 <input id='b_secs' type='number'></input>sec
             </form>
 
+            <p id='nb_reciever'>Enter Info, and press start!</p>
+
             <p id='reciever'>__h __min __sec</p>
 
             <div id='all_btn'>
@@ -165,3 +165,4 @@ export default function TimerPage(){
     );
 
 };
+
