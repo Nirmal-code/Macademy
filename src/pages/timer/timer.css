@@ -1,3 +1,75 @@
+@media only screen and (min-width:1501px){
+    #countdown_info{
+        margin-top:150px;
+        font-size:40px;
+        height:90px;
+        width:700px;
+        padding:20px;
+        border-radius:15px;
+        margin-left:-350px;
+    }
+
+    input{
+        width:75px;
+        height:40px;
+        font-size:40px;
+    }
+
+    #reciever{
+        font-size:150px;
+        margin-top:50px;
+        width:90%;
+        margin-left:-45%;
+        border-radius:30px;
+        padding:10px;
+    }
+
+    #all_btn{
+        margin-top:-80px;
+        margin-left:-600px;
+    }
+
+    #starter_btn{
+        font-size:40px;
+        padding:20px;
+        border-radius:5px;
+        width:300px;
+    }
+
+    #stop_btn{
+        font-size:40px;
+        padding:20px;
+        border-radius:5px;
+        width:300px;
+    }
+
+    #resume_btn{
+        font-size:40px;
+        padding:20px;
+        border-radius:5px;
+        width:300px;
+    }
+
+    #pause_btn{
+        font-size:40px;
+        padding:20px;
+        border-radius:5px;
+        width:300px;
+    }
+
+    #nb_reciever{
+        font-size:50px;
+        margin-left:-250px;
+        width:500px;
+        border-radius:10px;
+    }
+
+}
+
+@media only screen and (min-width:1261px) and (max-width:1500px){
+    
+}
+
 
 #timer{
     min-width:100%;
@@ -12,15 +84,9 @@
     position:absolute;
 }
 
-#countdown_info{
-    margin-top:150px;
-}
 
 
 input{
-    width:75px;
-    height:40px;
-    font-size:40px;
     text-align:center;
     vertical-align:bottom;
     border-top:none;
@@ -29,51 +95,24 @@ input{
 }
 
 #countdown_info{
-    font-size:40px;
     background-color:white;
-    height:90px;
-    width:700px;
-    padding:20px;
-    border-radius:15px;
     position:relative;
     left:50%;
-    margin-left:-350px;
 }
 
 #reciever{
-    font-size:150px;
-    margin-top:50px;
     background-color:white;
-    width:100%;
+    position:relative;
+    left:50%;
     text-align:center;
-    border-radius:30px;
-    padding:10px;
 }
 
 #all_btn{
-    margin-top:-100px;
     position:relative;
     left:50%;
-    margin-left:-600px;
-}
-
-#stop_btn{
-    pointer-events:none;
-}
-
-#resume_btn{
-    pointer-events:none;
-}
-
-#pause_btn{
-    pointer-events:none;
 }
 
 #starter_btn{
-    font-size:40px;
-    padding:20px;
-    border-radius:5px;
-    width:300px;
     background-color:rgb(144, 238, 144);
 }
 
@@ -83,10 +122,7 @@ input{
 }
 
 #stop_btn{
-    font-size:40px;
-    padding:20px;
-    border-radius:5px;
-    width:300px;
+    pointer-events:none;
     background-color:rgb(220, 20, 60);
 }
 
@@ -96,10 +132,7 @@ input{
 }
 
 #pause_btn{
-    font-size:40px;
-    padding:20px;
-    border-radius:5px;
-    width:300px;
+    pointer-events:none;
     background-color:rgb(100, 149, 237);
 }
 
@@ -109,10 +142,7 @@ input{
 }
 
 #resume_btn{
-    font-size:40px;
-    padding:20px;
-    border-radius:5px;
-    width:300px;
+    pointer-events:none;
     background-color:rgb(100, 149, 237);
 }
 
@@ -123,12 +153,8 @@ input{
 
 
 #nb_reciever{
-    font-size:50px;
     text-align:center;
     position:relative;
     background-color:yellow;
     left:50%;
-    margin-left:-250px;
-    width:500px;
-    border-radius:10px;
 }
