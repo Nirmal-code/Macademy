@@ -10,3 +10,15 @@
     left:0px;
     position:absolute;
 }
+
+
+.plannerjs #timer_id{
+    display:inline-block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top:40px;
+    background-color:white;
+    width:450px;
+    font-size:25px;
+    border-radius:200px;
+}
+
