@@ -11,10 +11,17 @@ import gpa_icon from '../../images/gpa_icon.png';
 export default function HomePage(){
 
     return(
-        <div id='home'>
+        <div class='homejs' id='home'>
             <Header />
             <title>Macademy-Home</title>
+
             <section id='section-1'>
+
+                <ul id='timer_id'>
+                    <li id='nb_reciever'>Timer Not Started: </li>
+                    <li id='reciever'>_h _min _sec</li>
+                </ul>
+                
                 <div id='caption-wrap'>
                     <h1 id='main-caption'>An effective studying tool for students to use!</h1>
                     <h4 id='secondary-caption'>MACademy is a tool students of all ages can use to develop better studying habits.</h4>
