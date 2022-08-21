@@ -10,3 +10,14 @@
     left:0px;
     position:absolute;
 }
+
+
+.gpajs #timer_id{
+    display:inline-block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top:125px;
+    background-color:white;
+    width:450px;
+    font-size:25px;
+    border-radius:200px;
+}
