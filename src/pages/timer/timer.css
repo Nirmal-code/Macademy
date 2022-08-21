@@ -1,5 +1,5 @@
 @media only screen and (min-width:1501px){
-    #countdown_info{
+    .timerjs #countdown_info{
         margin-top:150px;
         font-size:40px;
         height:90px;
@@ -15,7 +15,7 @@
         font-size:40px;
     }
 
-    #reciever{
+    .timerjs #reciever{
         font-size:150px;
         margin-top:50px;
         width:90%;
@@ -57,17 +57,81 @@
         width:300px;
     }
 
-    #nb_reciever{
+    .timerjs #nb_reciever{
         font-size:50px;
-        margin-left:-250px;
-        width:500px;
+        margin-left:-300px;
+        width:600px;
         border-radius:10px;
     }
 
 }
 
 @media only screen and (min-width:1261px) and (max-width:1500px){
-    
+    #countdown_info{
+        margin-top:150px;
+        font-size:25px;
+        height:90px;
+        width:600px;
+        padding:10px;
+        border-radius:15px;
+        margin-left:-300px;
+    }
+
+    input{
+        width:75px;
+        height:35px;
+        font-size:25px;
+    }
+
+    .timerjs #reciever{
+        font-size:130px;
+        margin-top:50px;
+        width:85%;
+        margin-left:-42.5%;
+        border-radius:30px;
+        padding:10px;
+    }
+
+    #all_btn{
+        margin-top:-80px;
+        margin-left:-500px;
+    }
+
+    #starter_btn{
+        font-size:30px;
+        padding:20px;
+        border-radius:5px;
+        width:250px;
+    }
+
+    #stop_btn{
+        font-size:30px;
+        padding:20px;
+        border-radius:5px;
+        width:250px;
+    }
+
+    #resume_btn{
+        font-size:30px;
+        padding:20px;
+        border-radius:5px;
+        width:250px;
+    }
+
+    #pause_btn{
+        font-size:30px;
+        padding:20px;
+        border-radius:5px;
+        width:250px;
+    }
+
+    .timerjs #nb_reciever{
+        font-size:45px;
+        margin-left:-250px;
+        width:500px;
+        margin-top:70px;
+        border-radius:10px;
+    }
 }
 
 
@@ -94,13 +158,14 @@ input{
     border-right:none;
 }
 
-#countdown_info{
+.timerjs #countdown_info{
     background-color:white;
     position:relative;
+    text-align:center;
     left:50%;
 }
 
-#reciever{
+.timerjs #reciever{
     background-color:white;
     position:relative;
     left:50%;
@@ -152,9 +217,14 @@ input{
 }
 
 
-#nb_reciever{
+.timerjs #nb_reciever{
     text-align:center;
     position:relative;
     background-color:yellow;
     left:50%;
+}
+
+
+Header #reciever{
+    display:none;
 }
