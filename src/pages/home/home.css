@@ -335,7 +335,7 @@ section{
     min-height:100%;
     width:100%;
     height:auto;
-    overflow:auto;
+    overflow:visible;
     top:0px;
     left:0px;
     position:absolute;
