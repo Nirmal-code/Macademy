@@ -134,6 +134,145 @@
     }
 }
 
+@media only screen and (min-width:768px) and (max-width:1260px){
+    #countdown_info{
+        margin-top:150px;
+        font-size:20px;
+        height:90px;
+        width:500px;
+        padding:10px;
+        border-radius:15px;
+        margin-left:-250px;
+    }
+
+    input{
+        width:75px;
+        height:35px;
+        font-size:25px;
+    }
+
+    .timerjs #reciever{
+        font-size:70px;
+        margin-top:50px;
+        width:85%;
+        margin-left:-42.5%;
+        border-radius:30px;
+        padding:10px;
+    }
+
+    #all_btn{
+        margin-top:-30px;
+        margin-left:-300px;
+    }
+
+    #starter_btn{
+        font-size:30px;
+        padding:10px;
+        border-radius:5px;
+        width:150px;
+    }
+
+    #stop_btn{
+        font-size:30px;
+        padding:10px;
+        border-radius:5px;
+        width:150px;
+    }
+
+    #resume_btn{
+        font-size:30px;
+        padding:10px;
+        border-radius:5px;
+        width:150px;
+    }
+
+    #pause_btn{
+        font-size:30px;
+        padding:10px;
+        border-radius:5px;
+        width:150px;
+    }
+
+    .timerjs #nb_reciever{
+        font-size:30px;
+        margin-left:-200px;
+        width:400px;
+        margin-top:70px;
+        border-radius:10px;
+    }
+
+}
+
+@media only screen and (max-width:769px){
+    #countdown_info{
+        margin-top:150px;
+        font-size:12px;
+        height:90px;
+        width:400px;
+        padding:10px;
+        border-radius:15px;
+        margin-left:-200px;
+    }
+
+    input{
+        width:75px;
+        height:35px;
+        font-size:12px;
+    }
+
+    .timerjs #reciever{
+        font-size:50px;
+        margin-top:20px;
+        width:85%;
+        margin-left:-42.5%;
+        border-radius:30px;
+        padding:10px;
+    }
+
+    #all_btn{
+        margin-top:-30px;
+        margin-left:-150px;
+    }
+
+
+    #starter_btn{
+        font-size:15px;
+        padding:10px;
+        border-radius:5px;
+        width:75px;
+    }
+
+    #stop_btn{
+        font-size:15px;
+        padding:10px;
+        border-radius:5px;
+        width:75px;
+    }
+
+    #resume_btn{
+        font-size:15px;
+        padding:10px;
+        border-radius:5px;
+        width:75px;
+    }
+
+    #pause_btn{
+        font-size:15px;
+        padding:10px;
+        border-radius:5px;
+        width:75px;
+    }
+
+    .timerjs #nb_reciever{
+        font-size:20px;
+        margin-left:-125px;
+        width:250px;
+        margin-top:70px;
+        border-radius:10px;
+    }
+
+}
+
 
 #timer{
     min-width:100%;
