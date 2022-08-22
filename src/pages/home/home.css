@@ -1,3 +1,4 @@
+
 @media only screen and (max-width:769px){
     #main-caption{
         font-size:40px;
@@ -9,12 +10,11 @@
 
     #secondary-caption{
         font-size:20px;
-        margin-top:-20px;
     }
 
     #caption-wrap{
         text-align:center;
-        margin-top:70px;
+        margin-top:80px;
         position:absolute;
     }
 
@@ -28,9 +28,10 @@
         padding:15px;
         font-size:25px;
         font-weight: 500;
-        margin-top:380px;
+        margin-top:500px;
         border-radius:10px;
         font-weight: 550;
+        position:relative;
     }
 
 
@@ -46,7 +47,7 @@
         border-radius: 20px;
         margin-left:auto;
         margin-right:auto;
-        margin-top:110px;
+        margin-top:150px;
     }
 
     td{
@@ -315,7 +316,7 @@ html{
 }
 
 section{
-    height:100vh;
+    height:950px;
     position:relative;
 }
 
@@ -381,4 +382,3 @@ table{
     background-color:white;
     position:relative;
 }
-
