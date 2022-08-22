@@ -5,9 +5,11 @@ import './timer.css';
 
 
 export default function TimerPage(){
-
-    window.isPaused=false;
-    window.isStopped=false;
+    
+    if (typeof window !=='undefined'){
+        window.isPaused=false;
+        window.isStopped=false;
+    }
     
     var x;
 
