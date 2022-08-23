@@ -10,11 +10,12 @@
 
     #secondary-caption{
         font-size:20px;
+        margin-top:-20px;
     }
 
     #caption-wrap{
         text-align:center;
-        margin-top:80px;
+        top:20vh;
         position:absolute;
     }
 
@@ -28,7 +29,7 @@
         padding:15px;
         font-size:25px;
         font-weight: 500;
-        margin-top:500px;
+        top:45vh;
         border-radius:10px;
         font-weight: 550;
         position:relative;
@@ -43,11 +44,10 @@
     #description_table{
         float:center;
         width:400px;
-        margin-bottom:auto;
         border-radius: 20px;
         margin-left:auto;
         margin-right:auto;
-        margin-top:150px;
+        margin-top:10vh;
     }
 
     td{
@@ -61,7 +61,7 @@
     }
 
     .homejs #timer_id{
-        margin-top:90px;
+        margin-top:80px;
         width:200px;
         font-size:21px;
         border-radius:200px;
@@ -316,7 +316,7 @@ html{
 }
 
 section{
-    height:950px;
+    height:100vh;
     position:relative;
 }
 
