@@ -9,14 +9,16 @@ import gpa_icon from '../../images/gpa_icon.png';
 
 
 export default function HomePage(){
-    document.addEventListener("orientationchange", function(event){
-        switch(window.orientation) 
-        {  
-            case 90: case -90:
-                break; 
-            default:
-        }
-    });
+    if (typeof window !=='undefined'){
+        document.addEventListener("orientationchange", function(event){
+            switch(window.orientation) 
+            {  
+                case 90: case -90:
+                    break; 
+                default:
+            }
+        });
+    };
 
     return(
         <div class='homejs' id='home'>
