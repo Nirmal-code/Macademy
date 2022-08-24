@@ -83,6 +83,7 @@ export default function TimerPage(){
 
                 if (window.isStopped==true) {
                     clearInterval(x);
+                    stop()
                     document.getElementById("reciever").innerHTML = "EXPIRED";
                     document.getElementById("nb_reciever").innerHTML="Timer Stopped."
 
@@ -101,8 +102,8 @@ export default function TimerPage(){
         var b_hour=parseInt(document.getElementById('b_hours').value);
         var b_minute=parseInt(document.getElementById('b_mins').value);
         var b_second=parseInt(document.getElementById('b_secs').value);
-
         
+        window.isStopped=false;
 
         getData(hour, minute, second, b_hour, b_minute, b_second)
     }
@@ -156,6 +157,7 @@ export default function TimerPage(){
 
                 if (window.isStopped==true) {
                     clearInterval(x);
+                    stop()
                     document.getElementById("reciever").innerHTML = "EXPIRED";
                     document.getElementById("nb_reciever").innerHTML="Timer Stopped."
                 }
