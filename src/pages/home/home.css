@@ -1,4 +1,3 @@
-
 @media only screen and (max-width:769px){
     #main-caption{
         font-size:40px;
@@ -15,7 +14,7 @@
 
     #caption-wrap{
         text-align:center;
-        top:20vh;
+        top:25vh;
         position:absolute;
     }
 
@@ -306,9 +305,8 @@
         font-size:25px;
         border-radius:200px;
     }
-
-
 }
+
 
 
 html{
