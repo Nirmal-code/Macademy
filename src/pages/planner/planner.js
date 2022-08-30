@@ -4,30 +4,6 @@ import Footer from '../Components/footer/footer';
 import './planner.css'
 
 export default function PlannerPage(){
-
-
-    if (localStorage.getItem('course1')==null){
-        localStorage.setItem('course1','[]');
-    }
-
-    if (localStorage.getItem('course2')==null){
-        localStorage.setItem('course2','[]');
-    }
-
-    if (localStorage.getItem('course3')==null){
-        localStorage.setItem('course3','[]');
-    }
-
-    if (localStorage.getItem('course4')==null){
-        localStorage.setItem('course4','[]');
-    }
-
-    if (localStorage.getItem('course5')==null){
-        localStorage.setItem('course5','[]');
-    }
-
-
-
     var one=[];
     var two=[];
     var three=[];
@@ -36,6 +12,28 @@ export default function PlannerPage(){
 
 
     function load(){
+        
+        
+        if (localStorage.getItem('course1')==null){
+            localStorage.setItem('course1','[]');
+        }
+    
+        if (localStorage.getItem('course2')==null){
+            localStorage.setItem('course2','[]');
+        }
+    
+        if (localStorage.getItem('course3')==null){
+            localStorage.setItem('course3','[]');
+        }
+    
+        if (localStorage.getItem('course4')==null){
+            localStorage.setItem('course4','[]');
+        }
+    
+        if (localStorage.getItem('course5')==null){
+            localStorage.setItem('course5','[]');
+        }
+        
         var one=JSON.parse(localStorage.getItem('course1'));
         var two=JSON.parse(localStorage.getItem('course2'));
         var three=JSON.parse(localStorage.getItem('course3'));
