@@ -16,6 +16,8 @@
 
     }
 
+
+
     #logo{
         display:none;
     }
@@ -23,12 +25,16 @@
     #icon{
         width:30px;
         height:30px;
-        padding-right:38px;
         margin-bottom:-10px;
     }
 
+    #menu-item{
+        padding-right:75px;
+    }
+
+
+
     h3{
-        padding-right:40px;
         font-size:10px;
         text-decoration: none;
     }
@@ -41,6 +47,11 @@
     #time{
         display:none;
     }
+
+    li Link{
+        width:100px;
+    }
+
 }
 
 /* Small Devices, Tablets */
@@ -198,7 +209,7 @@
 }
 
 
-li{
+#header-wrap li{
     display:inline-block;
 }
 
@@ -219,7 +230,7 @@ li{
     vertical-align: middle;
 }
 
-ul{
+#header-wrap ul{
     list-style-type: none;
     display:block;
     overflow:hidden;
