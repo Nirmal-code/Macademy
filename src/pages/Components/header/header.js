@@ -27,7 +27,7 @@ export default function Header(){
                     <li><Link to='../../planner/planner/' class='active' id="menu-item"><img id='icon' src={calendar_icon}></img><h3> PLANNER</h3></Link></li>
                     <li><Link to='../../timer/timer/' class='active' id="menu-item"><img id='icon' src={clock_icon}></img><h3>TIMER</h3></Link></li>
                     <li><Link to='../../gpa/gpa/' class='active' id="menu-item"><img id='icon' src={gpa_icon}></img><h3>GPA</h3></Link></li>
-                    <li id='time'>{current_date}</li>
+                    <li id='time'><p id='date_time'>{current_date}</p></li>
                 </ul>
             </navbar>
         </div>
