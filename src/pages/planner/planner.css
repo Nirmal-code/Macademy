@@ -1,228 +1,393 @@
 @media only screen and (min-width:1501px){
-    .plannerjs #timer_id{
-        margin-top:50px;
-        width:450px;
-        font-size:25px;
-        border-radius:200px;
-    }
-    .plannerjs #course1 li, .plannerjs #course2 li, .plannerjs #course3 li, .plannerjs #course4 li, .plannerjs #course5 li {
-        padding: 12px 8px 12px 40px;
-        font-size:18px;
-    }
-
-    .addBtn {
-        font-size: 20px;
-        border-radius: 5px;;
-        left:50%;    
-    }
-
-    .close {
-        padding: 12px 16px 12px 16px;
-    }
-
-    .plannerjs #course1{
-        width:1000px;
-        margin-left:-505px;
-        left:50%;
-    }
-
-
-
-}
-
-
-
-#planner{
-    min-width:100%;
-    min-height:200%;
-    width:100%;
-    height:auto;
-    background-image:url('../../images/planner_background.png');
-    background-size:cover;
-    overflow:auto;
-    top:0px;
-    left:0px;
-    position:absolute;
-}
-
-
-.plannerjs #timer_id{
-    list-style-type: none;
-    overflow:hidden;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color:white;
-}
-
-.plannerjs #timer_id li{
-    display:inline-block;
-    list-style: none;
-}
-
-.plannerjs #course1, .plannerjs #course2, .plannerjs #course3, .plannerjs #course4, .plannerjs #course5{
-    margin:0;
-    padding:0;
-}
-
-.plannerjs #course1 li, .plannerjs #course2 li, .plannerjs #course3 li, .plannerjs #course4 li, .plannerjs #course5 li {
-    text-decoration:none;
-    cursor:pointer;
-    position:relative;
-    background:#eee;
-    transition:0.2s;
-}
-
-.plannerjs #course1 li:hover, .plannerjs #course2 li:hover, .plannerjs #course3 li:hover, .plannerjs #course4 li:hover, .plannerjs #course5 li:hover{
-    background:#ddd;
-}
-
-
-.addBtn {
-    background: #d9d9d9;
-    color: #555;
-    cursor: pointer;
-    transition: 0.3s;
-    position:relative;
-}
-  
-
-
-.close {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-  
-.close:hover {
-    background-color: #f44336;
-    color: white;
-}
-
-
-.plannerjs #course1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    list-style: none;
-    position:relative;
-    width:1000px;
-    margin-left:-505px;
-    left:50%;
-}
-
-.plannerjs #course2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    list-style: none;
-    width:1000px;
-    left:50%;
-    margin-left:-505px;
-    position:relative;
-}
-
-  .plannerjs #course3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    list-style: none;
-    width:1000px;
-    left:50%;
-    margin-left:-505px;
-    position:relative;
-  }
-
-  .plannerjs #course4{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    list-style: none;
-    width:1000px;
-    left:50%;
-    margin-left:-505px;
-    position:relative;
-  }
-
-  .plannerjs #course5{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    list-style: none;
-    width:1000px;
-    left:50%;
-    margin-left:-505px;
-    position:relative;
-  }
-
-  .plannerjs input{
-    background:#eee;
+  .plannerjs #timer_id{
+    margin-top:50px;
+    width:450px;
     font-size:25px;
-    text-align:center;
+    border-radius:200px;
+  }
+  .plannerjs #course1 li, .plannerjs #course2 li, .plannerjs #course3 li, .plannerjs #course4 li, .plannerjs #course5 li {
+    padding: 12px 8px 12px 40px;
+    font-size:18px;
+  }
+  
+  .addBtn {
+    font-size: 20px;
+    border-radius: 5px;;
+    left:50%;    
+  }
+
+  .updateBtn {
+    font-size: 20px;
+    border-radius: 5px;;
+    left:51%;    
+  }
+  
+  .close {
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .plannerjs .course{
+    width:1000px;
+    left:8%;
+  }
+
+
+  .plannerjs .taskinput{
+    font-size:25px;
     width:1000px;
     left:50%;
-    position:relative;
     margin-left:-500px;
-    border:none;
-    
+  }
+
+  .plannerjs .nameinput{
+    font-size:30px;
+    width:300px;
+    left:50%;
+    margin-left:-165px;
+    margin-bottom:20px;
   }
 
   .plannerjs h2{
     font-size:30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:#eee;
     width:300px;
-    text-align:center;
-    position:relative;
     left:50%;
     margin-left:-150px;
 
   }
 
   #course1-wrap{
-    background-color: #eee;
     width:1200px;
-    position:relative;
     left:50%;
     margin-left:-600px;
     border-radius:15px;
     padding-bottom:20px;
     padding-top:20px;
+
   }
 
-  
   #course2-wrap{
-    margin-top:20px;
-    background-color: #eee;
     width:1200px;
-    position:relative;
     left:50%;
     margin-left:-600px;
     border-radius:15px;
     padding-bottom:20px;
     padding-top:20px;
+
   }
 
   #course3-wrap{
-    margin-top:20px;
-    background-color: #eee;
     width:1200px;
-    position:relative;
     left:50%;
     margin-left:-600px;
     border-radius:15px;
     padding-bottom:20px;
     padding-top:20px;
+
   }
 
   #course4-wrap{
-    margin-top:20px;
-    background-color: #eee;
     width:1200px;
-    position:relative;
     left:50%;
     margin-left:-600px;
     border-radius:15px;
     padding-bottom:20px;
     padding-top:20px;
+
   }
 
   #course5-wrap{
-    margin-top:20px;
-    background-color: #eee;
     width:1200px;
-    position:relative;
     left:50%;
     margin-left:-600px;
     border-radius:15px;
     padding-bottom:20px;
     padding-top:20px;
+
   }
+}
+
+@media only screen and (min-width:1261px) and (max-width:1500px){
+
+  .plannerjs #timer_id{
+    margin-top:50px;
+    width:450px;
+    font-size:25px;
+    border-radius:200px;
+  }
+  .plannerjs #course1 li, .plannerjs #course2 li, .plannerjs #course3 li, .plannerjs #course4 li, .plannerjs #course5 li {
+    padding: 12px 8px 12px 40px;
+    font-size:18px;
+  }
+  
+  .addBtn {
+    font-size: 20px;
+    border-radius: 5px;;
+    left:50%;    
+  }
+
+  .updateBtn {
+    font-size: 20px;
+    border-radius: 5px;;
+    left:51%;    
+  }
+  
+  .close {
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .plannerjs .course{
+    width:1000px;
+    left:8%;
+  }
+
+
+  .plannerjs .taskinput{
+    font-size:25px;
+    width:1000px;
+    left:50%;
+    margin-left:-500px;
+  }
+
+  .plannerjs .nameinput{
+    font-size:30px;
+    width:300px;
+    left:50%;
+    margin-left:-165px;
+    margin-bottom:20px;
+  }
+
+  .plannerjs h2{
+    font-size:30px;
+    width:300px;
+    left:50%;
+    margin-left:-150px;
+
+  }
+
+  #course1-wrap{
+    width:1200px;
+    left:50%;
+    margin-left:-600px;
+    border-radius:15px;
+    padding-bottom:20px;
+    padding-top:20px;
+
+  }
+
+  #course2-wrap{
+    width:1200px;
+    left:50%;
+    margin-left:-600px;
+    border-radius:15px;
+    padding-bottom:20px;
+    padding-top:20px;
+
+  }
+
+  #course3-wrap{
+    width:1200px;
+    left:50%;
+    margin-left:-600px;
+    border-radius:15px;
+    padding-bottom:20px;
+    padding-top:20px;
+
+  }
+
+  #course4-wrap{
+    width:1200px;
+    left:50%;
+    margin-left:-600px;
+    border-radius:15px;
+    padding-bottom:20px;
+    padding-top:20px;
+
+  }
+
+  #course5-wrap{
+    width:1200px;
+    left:50%;
+    margin-left:-600px;
+    border-radius:15px;
+    padding-bottom:20px;
+    padding-top:20px;
+
+  }
+
+}
+
+
+#planner{
+  min-width:100%;
+  min-height:200%;
+  width:100%;
+  height:auto;
+  background-image:url('../../images/planner_background.png');
+  background-size:cover;
+  overflow:auto;
+  top:0px;
+  left:0px;
+  position:absolute;
+}
+
+
+.plannerjs #timer_id{
+  list-style-type: none;
+  overflow:hidden;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color:white;
+}
+
+.plannerjs #timer_id li{
+  display:inline-block;
+  list-style: none;
+}
+
+.plannerjs #course1, .plannerjs #course2, .plannerjs #course3, .plannerjs #course4, .plannerjs #course5{
+  margin:0;
+  padding:0;
+}
+
+.plannerjs #course1 li, .plannerjs #course2 li, .plannerjs #course3 li, .plannerjs #course4 li, .plannerjs #course5 li {
+  text-decoration:none;
+  cursor:pointer;
+  position:relative;
+  background:#eee;
+  transition:0.2s;
+}
+
+.plannerjs #course1 li:hover, .plannerjs #course2 li:hover, .plannerjs #course3 li:hover, .plannerjs #course4 li:hover, .plannerjs #course5 li:hover{
+  background:#ddd;
+}
+
+
+.addBtn {
+  background: #d9d9d9;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s;
+  position:relative;
+}
+
+.updateBtn {
+  background: #d9d9d9;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s;
+  position:relative;
+}
+  
+
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+  
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+
+.plannerjs .course{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  list-style: none;
+  position:relative;
+}
+
+
+.plannerjs .taskinput{
+  background:#eee;
+  text-align:center;
+  position:relative;
+  border:none;
+    
+}
+
+
+.plannerjs .nameinput{
+  background:#eee;
+  text-align:center;
+  position:relative;
+  border:none;
+    
+}
+
+.plannerjs h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color:#eee;
+  text-align:center;
+  position:relative;
+
+}
+
+#course1-wrap{
+  display:none;
+  background-color: #eee;
+  position:relative;
+}
+
+#course2-wrap{
+  display:none;
+  background-color: #eee;
+  position:relative;
+}
+
+#course3-wrap{
+  display:none;
+  background-color: #eee;
+  position:relative;
+}
+
+#course4-wrap{
+  display:none;
+  background-color: #eee;
+  position:relative;
+}
+
+#course5-wrap{
+  display:none;
+  background-color: #eee;
+  position:relative;
+}
+
+#addcourse{
+  position:relative;
+  width:200px;
+  left:50%;
+  margin-left:-100px;
+  font-size:20px;
+  margin-top:20px;
+}
+
+#addcourse_wrap{
+  background-color:#eee;
+  width:300px;
+  position:relative;
+  left:50%;
+  margin-left:-150px;
+  border-radius:15px;
+
+}
+
+#coursename{
+  text-align:center;
+  position:relative;
+  width:190px;
+  left:50%;
+  margin-left:-100px;
+  margin-bottom:20px;
+}
+
+.removecourse{
+  position:relative;
+  left:50%;
+  width:200px;
+  margin-left:-100px;
+  margin-top:10px;
+  background-color:#f44336;
+  border-radius:10px;
+}
+  
