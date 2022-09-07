@@ -230,6 +230,11 @@
   position:absolute;
 }
 
+#load{
+  visibility:hidden;
+}
+
+
 
 .plannerjs #timer_id{
   list-style-type: none;
