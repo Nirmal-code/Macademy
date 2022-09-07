@@ -14,6 +14,17 @@ export default function PlannerPage(){
     var five=[];
 
     var courses=[];
+    
+    if (typeof window !=='undefined'){
+        window.timeout=false;
+    }
+
+    setTimeout(function() {
+        if (window.timeout==false){
+            document.getElementById('load').click();
+            window.timeout=true;
+        }
+    }, 100);
 
 
     function load(){
