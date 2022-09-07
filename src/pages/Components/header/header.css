@@ -42,8 +42,8 @@
     }
 
 
-    #time{
-        visibility:hidden;
+    #date_time{
+        display:none;
     }
 
     li Link{
