@@ -136,16 +136,16 @@
   }
   
   .plannerjs .course{
-    width:1000px;
-    left:8%;
+    width:950px;
+    left:7%;
   }
 
 
   .plannerjs .taskinput{
     font-size:25px;
-    width:1000px;
+    width:950px;
     left:50%;
-    margin-left:-500px;
+    margin-left:-475px;
   }
 
   .plannerjs .nameinput{
@@ -165,9 +165,9 @@
   }
 
   #course1-wrap{
-    width:1200px;
+    width:1100px;
     left:50%;
-    margin-left:-600px;
+    margin-left:-550px;
     border-radius:15px;
     padding-bottom:20px;
     padding-top:20px;
@@ -175,9 +175,9 @@
   }
 
   #course2-wrap{
-    width:1200px;
+    width:1100px;
     left:50%;
-    margin-left:-600px;
+    margin-left:-550px;
     border-radius:15px;
     padding-bottom:20px;
     padding-top:20px;
@@ -185,9 +185,9 @@
   }
 
   #course3-wrap{
-    width:1200px;
+    width:1100px;
     left:50%;
-    margin-left:-600px;
+    margin-left:-550px;
     border-radius:15px;
     padding-bottom:20px;
     padding-top:20px;
@@ -195,9 +195,9 @@
   }
 
   #course4-wrap{
-    width:1200px;
+    width:1100px;
     left:50%;
-    margin-left:-600px;
+    margin-left:-550px;
     border-radius:15px;
     padding-bottom:20px;
     padding-top:20px;
@@ -205,13 +205,242 @@
   }
 
   #course5-wrap{
-    width:1200px;
+    width:1100px;
     left:50%;
-    margin-left:-600px;
+    margin-left:-550px;
     border-radius:15px;
     padding-bottom:20px;
     padding-top:20px;
 
+  }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1260px){
+  .plannerjs #timer_id{
+    margin-top:50px;
+    width:450px;
+    font-size:25px;
+    border-radius:200px;
+  }
+  .plannerjs #course1 li, .plannerjs #course2 li, .plannerjs #course3 li, .plannerjs #course4 li, .plannerjs #course5 li {
+    padding: 12px 8px 12px 40px;
+    font-size:18px;
+  }
+  
+  .addBtn {
+    font-size: 20px;
+    border-radius: 5px;;
+    left:50%;    
+  }
+
+  .updateBtn {
+    font-size: 20px;
+    border-radius: 5px;;
+    left:51%;    
+  }
+  
+  .close {
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .plannerjs .course{
+    width:600px;
+    left:7%;
+  }
+
+
+  .plannerjs .taskinput{
+    font-size:25px;
+    width:600px;
+    left:50%;
+    margin-left:-300px;
+  }
+
+  .plannerjs .nameinput{
+    font-size:30px;
+    width:300px;
+    left:50%;
+    margin-left:-165px;
+    margin-bottom:20px;
+  }
+
+  .plannerjs h2{
+    font-size:30px;
+    width:300px;
+    left:50%;
+    margin-left:-150px;
+
+  }
+
+  #course1-wrap{
+    width:700px;
+    left:50%;
+    margin-left:-350px;
+    border-radius:15px;
+    padding-bottom:20px;
+    padding-top:20px;
+
+  }
+
+  #course2-wrap{
+    width:700px;
+    left:50%;
+    margin-left:-350px;
+    border-radius:15px;
+    padding-bottom:20px;
+    padding-top:20px;
+
+  }
+
+  #course3-wrap{
+    width:700px;
+    left:50%;
+    margin-left:-350px;
+    border-radius:15px;
+    padding-bottom:20px;
+    padding-top:20px;
+
+  }
+
+  #course4-wrap{
+    width:700px;
+    left:50%;
+    margin-left:-350px;
+    border-radius:15px;
+    padding-bottom:20px;
+    padding-top:20px;
+
+  }
+
+  #course5-wrap{
+    width:700px;
+    left:50%;
+    margin-left:-350px;
+    border-radius:15px;
+    padding-bottom:20px;
+    padding-top:20px;
+
+  }
+
+  .plannerjs #timer_id{
+    left:50%;
+    position:relative;
+    width:500px;
+    margin-left:-250px;
+  }
+
+}
+
+@media only screen and (max-width:769px){
+  .plannerjs #timer_id{
+    margin-top:50px;
+    width:450px;
+    font-size:25px;
+    border-radius:200px;
+  }
+  .plannerjs #course1 li, .plannerjs #course2 li, .plannerjs #course3 li, .plannerjs #course4 li, .plannerjs #course5 li {
+    padding: 12px 8px 12px 40px;
+    font-size:18px;
+  }
+  
+  .addBtn {
+    font-size: 20px;
+    border-radius: 5px;;
+    left:50%;    
+  }
+
+  .updateBtn {
+    font-size: 20px;
+    border-radius: 5px;;
+    left:51%;    
+  }
+  
+  .close {
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .plannerjs .course{
+    width:300px;
+    left:13%;
+  }
+
+
+  .plannerjs .taskinput{
+    font-size:20px;
+    width:300px;
+    left:50%;
+    margin-left:-150px;
+  }
+
+  .plannerjs .nameinput{
+    font-size:25px;
+    width:300px;
+    left:50%;
+    margin-left:-165px;
+    margin-bottom:20px;
+  }
+
+  .plannerjs h2{
+    font-size:25px;
+    width:300px;
+    left:50%;
+    margin-left:-150px;
+
+  }
+
+  #course1-wrap{
+    width:400px;
+    left:50%;
+    margin-left:-200px;
+    border-radius:15px;
+    padding-bottom:20px;
+    padding-top:20px;
+
+  }
+
+  #course2-wrap{
+    width:400px;
+    left:50%;
+    margin-left:-200px;
+    border-radius:15px;
+    padding-bottom:20px;
+    padding-top:20px;
+  }
+
+  #course3-wrap{
+    width:400px;
+    left:50%;
+    margin-left:-200px;
+    border-radius:15px;
+    padding-bottom:20px;
+    padding-top:20px;
+  }
+
+  #course4-wrap{
+    width:400px;
+    left:50%;
+    margin-left:-200px;
+    border-radius:15px;
+    padding-bottom:20px;
+    padding-top:20px;
+  }
+
+  #course5-wrap{
+    width:400px;
+    left:50%;
+    margin-left:-200px;
+    border-radius:15px;
+    padding-bottom:20px;
+    padding-top:20px;
+  }
+
+  .plannerjs #timer_id{
+    left:50%;
+    position:relative;
+    width:350px;
+    margin-left:-175px;
+    font-size:20px;
   }
 
 }
@@ -230,11 +459,6 @@
   position:absolute;
 }
 
-#load{
-  visibility:hidden;
-}
-
-
 
 .plannerjs #timer_id{
   list-style-type: none;
@@ -246,6 +470,10 @@
 .plannerjs #timer_id li{
   display:inline-block;
   list-style: none;
+}
+
+#load{
+  visibility:hidden;
 }
 
 .plannerjs #course1, .plannerjs #course2, .plannerjs #course3, .plannerjs #course4, .plannerjs #course5{
