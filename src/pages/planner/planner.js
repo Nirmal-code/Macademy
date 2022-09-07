@@ -4,16 +4,21 @@ import Footer from '../Components/footer/footer';
 import './planner.css'
 
 export default function PlannerPage(){
+
+
+
     var one=[];
     var two=[];
     var three=[];
     var four=[];
-    var five=[]
+    var five=[];
+
+    var courses=[];
 
 
     function load(){
-        
-        
+
+
         if (localStorage.getItem('course1')==null){
             localStorage.setItem('course1','[]');
         }
@@ -33,12 +38,53 @@ export default function PlannerPage(){
         if (localStorage.getItem('course5')==null){
             localStorage.setItem('course5','[]');
         }
+
+        if (localStorage.getItem('all_courses')==null){
+            localStorage.setItem('all_courses','[]');
+        }
+
+        if (localStorage.getItem('coursecount')==null){
+            localStorage.setItem('coursecount','0')
+        }
+
+        if (localStorage.getItem('course1_name')!=null){
+            document.getElementById('course1-wrap').style.display='block';
+            document.getElementById('reciever1').innerHTML=localStorage.getItem('course1_name');
+            courses.push('1');
+        }
+
+        if (localStorage.getItem('course2_name')!=null){
+            document.getElementById('course2-wrap').style.display='block';
+            document.getElementById('reciever2').innerHTML=localStorage.getItem('course2_name');
+            courses.push('2');
+        }
+
+        if (localStorage.getItem('course3_name')!=null){
+            document.getElementById('course3-wrap').style.display='block';
+            document.getElementById('reciever3').innerHTML=localStorage.getItem('course3_name');
+            courses.push('3');
+        }
+
+        if (localStorage.getItem('course4_name')!=null){
+            document.getElementById('course4-wrap').style.display='block';
+            document.getElementById('reciever4').innerHTML=localStorage.getItem('course4_name');
+            courses.push('4');
+        }
+
+        if (localStorage.getItem('course5_name')!=null){
+            document.getElementById('course5-wrap').style.display='block';
+            document.getElementById('reciever5').innerHTML=localStorage.getItem('course5_name');
+            courses.push('5');
+        }
+
+        localStorage.setItem('all_courses',JSON.stringify(courses));
+
         
-        var one=JSON.parse(localStorage.getItem('course1'));
-        var two=JSON.parse(localStorage.getItem('course2'));
-        var three=JSON.parse(localStorage.getItem('course3'));
-        var four=JSON.parse(localStorage.getItem('course4'));
-        var five=JSON.parse(localStorage.getItem('course5'));
+        one=JSON.parse(localStorage.getItem('course1'));
+        two=JSON.parse(localStorage.getItem('course2'));
+        three=JSON.parse(localStorage.getItem('course3'));
+        four=JSON.parse(localStorage.getItem('course4'));
+        five=JSON.parse(localStorage.getItem('course5'));
 
         one.forEach(function(item){
             var li = document.createElement("li");
@@ -182,6 +228,7 @@ export default function PlannerPage(){
 
 
     function courseOne() {
+
         var li = document.createElement("li");
         var inputValue = document.getElementById("input1").value;
 
@@ -190,11 +237,12 @@ export default function PlannerPage(){
 
         var t = document.createTextNode(inputValue);
         li.appendChild(t);
+
         if (inputValue === '') {
-          alert("You must write something!");
-        } else {
-          document.getElementById("course1").appendChild(li);
-        }
+            alert("You must write something!");
+          } else {
+            document.getElementById("course1").appendChild(li);
+          }
 
         uniCourse(li,inputValue, 'course1')
         document.getElementById("input1").value = "";
@@ -282,6 +330,102 @@ export default function PlannerPage(){
 
     }
 
+
+    function addCourse(){
+        courses=JSON.parse(localStorage.getItem('all_courses'));
+        var name=document.getElementById('coursename').value;
+
+        if (name!==''){
+            if (courses.includes('1')==false){
+                document.getElementById('course1-wrap').style.display='block';
+                localStorage.setItem('course1_name',name);
+                document.getElementById('reciever1').innerHTML=name;
+                localStorage.setItem('coursecount','1');
+                courses.push('1');
+            } else if (courses.includes('2')==false){
+                document.getElementById('course2-wrap').style.display='block';
+                localStorage.setItem('course2_name',name);
+                document.getElementById('reciever2').innerHTML=name;
+                localStorage.setItem('coursecount','2');
+                courses.push('2');
+            } else if (courses.includes('3')==false){
+                document.getElementById('course3-wrap').style.display='block';
+                localStorage.setItem('course3_name',name);
+                document.getElementById('reciever3').innerHTML=name;
+                localStorage.setItem('coursecount','3');
+                courses.push('3');
+            } else if (courses.includes('4')==false){
+                document.getElementById('course4-wrap').style.display='block';
+                localStorage.setItem('course4_name',name);
+                document.getElementById('reciever4').innerHTML=name;
+                localStorage.setItem('coursecount','4');
+                courses.push('4');
+            } else if (courses.includes('5')==false){
+                document.getElementById('course5-wrap').style.display='block';
+                localStorage.setItem('course5_name',name);
+                document.getElementById('reciever5').innerHTML=name;
+                localStorage.setItem('coursecount','5');
+                document.getElementById('addcourse_wrap').style.display='none';
+                courses.push('5');
+            }
+        }else{
+            window.alert('please enter course name')
+        }
+
+        localStorage.setItem('all_courses',JSON.stringify(courses));
+
+    }
+
+    function removeCourseone(){
+        courses=JSON.parse(localStorage.getItem('all_courses'));
+        localStorage.setItem('course1','[]')
+        localStorage.removeItem('course1_name');
+        var index=courses.indexOf("1");
+        courses.splice(index,1);
+        localStorage.setItem('all_courses',JSON.stringify(courses));
+        document.getElementById('course1-wrap').style.display='none';
+    }
+
+    function removeCoursetwo(){
+        courses=JSON.parse(localStorage.getItem('all_courses'));
+        localStorage.setItem('course2','[]')
+        localStorage.removeItem('course2_name');
+        var index=courses.indexOf("2");
+        courses.splice(index,1);
+        localStorage.setItem('all_courses',JSON.stringify(courses));
+        document.getElementById('course2-wrap').style.display='none';
+    }
+
+    function removeCoursethree(){
+        courses=JSON.parse(localStorage.getItem('all_courses'));
+        localStorage.setItem('course3','[]')
+        localStorage.removeItem('course3_name');
+        var index=courses.indexOf("3");
+        courses.splice(index,1);
+        localStorage.setItem('all_courses',JSON.stringify(courses));
+        document.getElementById('course3-wrap').style.display='none';
+    }
+
+    function removeCoursefour(){
+        courses=JSON.parse(localStorage.getItem('all_courses'));
+        localStorage.setItem('course4','[]')
+        localStorage.removeItem('course4_name');
+        var index=courses.indexOf("4");
+        courses.splice(index,1);
+        localStorage.setItem('all_courses',JSON.stringify(courses));
+        document.getElementById('course4-wrap').style.display='none';
+    }
+
+    function removeCoursefive(){
+        courses=JSON.parse(localStorage.getItem('all_courses'));
+        localStorage.setItem('course5','[]')
+        localStorage.removeItem('course5_name');
+        var index=courses.indexOf("5");
+        courses.splice(index,1);
+        localStorage.setItem('all_courses',JSON.stringify(courses));
+        document.getElementById('course5-wrap').style.display='none';
+    }
+
     return(
         <div class='plannerjs' id="planner">
             <Header />
@@ -296,57 +440,85 @@ export default function PlannerPage(){
             <button id='load' onClick={load}>Load</button>
 
             <div id='course1-wrap'>
-                <h2>Course 1</h2>
+                <h2 id='reciever1'>Course 1</h2>
 
-                <ul id='course1'>
+                <ul id='course1' class='course'>
                 </ul>
 
-                <input type="text" id="input1" placeholder="New Task..."></input>
+                <input type="text" class='taskinput' id="input1" placeholder="New Task..."></input>
                 <span onClick={courseOne} class="addBtn">Add</span>
+                <br></br>
+                <button onClick={removeCourseone} class='removecourse' id='removecourse1'>Remove Course</button>
 
             </div>
+
+            <br></br>
 
             <div id='course2-wrap'>
-                <h2>Course 2</h2>
+                <h2 id='reciever2'>Course 2</h2>
 
-                <ul id='course2'>
+                <ul id='course2'class='course'>
                 </ul>
 
-                <input type="text" id="input2" placeholder="New Task..."></input>
+                <input type="text" class='taskinput' id="input2" placeholder="New Task..."></input>
                 <span onClick={courseTwo} class="addBtn">Add</span>
+                <br></br>
+                <button class='removecourse' onClick={removeCoursetwo} id='removecourse2'>Remove Course</button>
+
 
             </div>
+
+            <br></br>
 
             <div id='course3-wrap'>
-                <h2>Course 3</h2>
+                <h2 id='reciever3'>Course 3</h2>
 
-                <ul id='course3'>
+                <ul id='course3' class='course'>
                 </ul>
 
-                <input type="text" id="input3" placeholder="New Task..."></input>
+                <input type="text" class='taskinput' id="input3" placeholder="New Task..."></input>
                 <span onClick={courseThree} class="addBtn">Add</span>
+                <br></br>
+                <button class='removecourse' onClick={removeCoursethree} id='removecourse3'>Remove Course</button>
 
             </div>
+
+            <br></br>
+
 
             <div id='course4-wrap'>
-                <h2>Course 4</h2>
+                <h2 id='reciever4'>Course 4</h2>
 
-                <ul id='course4'>
+                <ul id='course4' class='course'>
                 </ul>
 
-                <input type="text" id="input4" placeholder="New Task..."></input>
+                <input type="text" class='taskinput' id="input4" placeholder="New Task..."></input>
                 <span onClick={courseFour} class="addBtn">Add</span>
+                <br></br>
+                <button class='removecourse' onClick={removeCoursefour} id='removecourse4'>Remove Course</button>
 
             </div>
 
-            <div id='course5-wrap'>
-                <h2>Course 5</h2>
+            <br></br>
 
-                <ul id='course5'>
+            <div id='course5-wrap'>
+
+                <h2 id='reciever5'>Course 5</h2>
+
+                <ul id='course5' class='course'>
                 </ul>
 
-                <input type="text" id="input5" placeholder="New Task..."></input>
+                <input type="text" class='taskinput' id="input5" placeholder="New Task..."></input>
                 <span onClick={courseFive} class="addBtn">Add</span>
+                <br></br>
+                <button class='removecourse' onClick={removeCoursefive} id='removecourse5'>Remove Course</button>
+
+            </div>
+
+            <div id='addcourse_wrap'>
+                <button id="addcourse" onClick={addCourse}>Add Course</button>
+                <br></br>
+                <input id='coursename' placeholder='Course Name'></input>
 
             </div>
 
@@ -354,3 +526,4 @@ export default function PlannerPage(){
         </div>
     );
 };
+
