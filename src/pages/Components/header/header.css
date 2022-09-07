@@ -16,8 +16,6 @@
 
     }
 
-
-
     #logo{
         display:none;
     }
@@ -45,7 +43,7 @@
 
 
     #time{
-        display:none;
+        visibility:hidden;
     }
 
     li Link{
