@@ -5,7 +5,6 @@ import './home.css';
 import mainpic from '../../images/home_page_image.png';
 import calendar_icon from '../../images/calendar_icon.png';
 import clock_icon from '../../images/clock_icon.png';
-import gpa_icon from '../../images/gpa_icon.png';
 
 
 export default function HomePage(){
@@ -42,10 +41,6 @@ export default function HomePage(){
                     </tr>
                     <tr>
                         <td><img id='des_pic' src={clock_icon}></img><br></br>Interval Studying</td>
-                        <td>Does your week feel overwhelming with the number of tasks you have left to do? Well, it may not be as bad as you think! With the Planner Tool, you can become more organized by actively knowing what you have to do each day of the week. Often times, without having it in front of us, we feel like we have a lot more to do than we do. Well, no more!</td>
-                    </tr>
-                    <tr>
-                        <td><img id='des_pic' src={gpa_icon}></img><br></br>GPA Calculator</td>
                         <td>Does your week feel overwhelming with the number of tasks you have left to do? Well, it may not be as bad as you think! With the Planner Tool, you can become more organized by actively knowing what you have to do each day of the week. Often times, without having it in front of us, we feel like we have a lot more to do than we do. Well, no more!</td>
                     </tr>
                 </table>
