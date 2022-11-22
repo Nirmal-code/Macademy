@@ -5,7 +5,6 @@ import logo from '../../../images/logo.png';
 import home_icon from '../../../images/home_icon.png';
 import calendar_icon from '../../../images/calendar_icon.png';
 import clock_icon from '../../../images/clock_icon.png';
-import gpa_icon from '../../../images/gpa_icon.png';
 
 
 
@@ -26,7 +25,6 @@ export default function Header(){
                     <li><Link to='../../home/home/' class='active' id="menu-item"><img id='icon' src={home_icon}></img><h3>HOME</h3></Link></li>
                     <li><Link to='../../planner/planner/' class='active' id="menu-item"><img id='icon' src={calendar_icon}></img><h3> PLANNER</h3></Link></li>
                     <li><Link to='../../timer/timer/' class='active' id="menu-item"><img id='icon' src={clock_icon}></img><h3>TIMER</h3></Link></li>
-                    <li><Link to='../../gpa/gpa/' class='active' id="menu-item"><img id='icon' src={gpa_icon}></img><h3>GPA</h3></Link></li>
                     <li id='time'><p id='date_time'>{current_date}</p></li>
                 </ul>
             </navbar>
