@@ -1,1 +1,2 @@
-<p>Check out the full site <a href="macademy.gatsbyjs.io>here</a> </p>
+<p>Check out the full site here: </p>
+<a href="macademy.gatsbyjs.io>here</a> 
