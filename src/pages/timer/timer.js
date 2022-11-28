@@ -13,8 +13,6 @@ export default function TimerPage(){
     
     var x;
 
-    const date=new Date()
-
     function pause(){
         window.isPaused=true;
         document.getElementById("resume_btn").style.pointerEvents='auto';
@@ -47,7 +45,7 @@ export default function TimerPage(){
         
         x=setInterval(() => {
 
-            if (document.URL.includes('timer') && window.isPaused==false){
+            if (document.URL.includes('timer') && window.isPaused===false){
                 document.getElementById("starter_btn").style.pointerEvents='none';
                 document.getElementById("pause_btn").style.pointerEvents='auto';
                 document.getElementById("stop_btn").style.pointerEvents='auto';
@@ -81,7 +79,7 @@ export default function TimerPage(){
                     getData(hour, minute, second, b_hour_store, b_minute_store, b_second_store)
                 }
 
-                if (window.isStopped==true) {
+                if (window.isStopped===true) {
                     clearInterval(x);
                     stop()
                     document.getElementById("reciever").innerHTML = "EXPIRED";
@@ -119,7 +117,7 @@ export default function TimerPage(){
         x=setInterval(() => {
 
             
-            if (document.URL.includes('timer') && window.isPaused==false){
+            if (document.URL.includes('timer') && window.isPaused===false){
                 document.getElementById("starter_btn").style.pointerEvents='none';
                 document.getElementById("pause_btn").style.pointerEvents='auto';
                 document.getElementById("stop_btn").style.pointerEvents='auto';
@@ -127,7 +125,7 @@ export default function TimerPage(){
 
             document.getElementById("nb_reciever").innerHTML="Study Time!"
 
-            if (window.isPaused==false){
+            if (window.isPaused===false){
                 second=second-1
 
                 if (second<=0){
@@ -155,7 +153,7 @@ export default function TimerPage(){
 
                 }
 
-                if (window.isStopped==true) {
+                if (window.isStopped===true) {
                     clearInterval(x);
                     stop()
                     document.getElementById("reciever").innerHTML = "EXPIRED";
@@ -173,12 +171,12 @@ export default function TimerPage(){
             <title>Macademy-Interval Studying</title>            
 
             <form id='countdown_info' onsubmit="return false">
-                Set Studying Time: <input id='hours' type='number'></input>h
-                <input id='mins' type='number'></input>min
-                <input id='secs' type='number'></input>sec<br></br>
-                Set Break Time:<input id='b_hours' type='number'></input>h
-                <input id='b_mins' type='number'></input>min
-                <input id='b_secs' type='number'></input>sec
+                Set Studying Time: <input id='hours' type='number'min="0" defaultValue="0"></input>h
+                <input id='mins' type='number' min="0" defaultValue="0"></input>min
+                <input id='secs' type='number' min="0" defaultValue="0"></input>sec<br></br>
+                Set Break Time:<input id='b_hours' type='number'min="0" defaultValue="0"></input>h
+                <input id='b_mins' type='number'min="0" defaultValue="0"></input>min
+                <input id='b_secs' type='number'min="0" defaultValue="0"></input>sec
             </form>
 
             <p id='nb_reciever'>Enter Info, and press start!</p>
