@@ -20,7 +20,7 @@ export default function PlannerPage(){
     }
 
     setTimeout(function() {
-        if (window.timeout==false){
+        if (window.timeout===false){
             document.getElementById('load').click();
             window.timeout=true;
         }
@@ -202,6 +202,7 @@ export default function PlannerPage(){
     function uniCourse(li,inputValue, key){
         var span = document.createElement("SPAN");
         var txt = document.createTextNode("\u00D7");
+        var index;
         span.className = "close";
         span.appendChild(txt);
         li.appendChild(span);
@@ -210,24 +211,24 @@ export default function PlannerPage(){
         li.appendChild(span);
         span.onclick=function(){
             var div = this.parentElement;
-            if (key=='course1'){
-                var index=one.indexOf(this.id);
+            if (key==='course1'){
+                index=one.indexOf(this.id);
                 one.splice(index,1);
                 localStorage.setItem(key,JSON.stringify(one));
-            }else if(key=='course2'){
-                var index=two.indexOf(this.id);
+            }else if(key==='course2'){
+                index=two.indexOf(this.id);
                 two.splice(index,1);
                 localStorage.setItem(key,JSON.stringify(two));
-            }else if(key=='course3'){
-                var index=three.indexOf(this.id);
+            }else if(key==='course3'){
+                index=three.indexOf(this.id);
                 three.splice(index,1);
                 localStorage.setItem(key,JSON.stringify(three));
-            }else if(key=='course4'){
-                var index=four.indexOf(this.id);
+            }else if(key==='course4'){
+                index=four.indexOf(this.id);
                 four.splice(index,1);
                 localStorage.setItem(key,JSON.stringify(four));
-            }else if(key=='course5'){
-                var index=five.indexOf(this.id);
+            }else if(key==='course5'){
+                index=five.indexOf(this.id);
                 five.splice(index,1);
                 localStorage.setItem(key,JSON.stringify(five));
             };
@@ -347,31 +348,31 @@ export default function PlannerPage(){
         var name=document.getElementById('coursename').value;
 
         if (name!==''){
-            if (courses.includes('1')==false){
+            if (courses.includes('1')===false){
                 document.getElementById('course1-wrap').style.display='block';
                 localStorage.setItem('course1_name',name);
                 document.getElementById('reciever1').innerHTML=name;
                 localStorage.setItem('coursecount','1');
                 courses.push('1');
-            } else if (courses.includes('2')==false){
+            } else if (courses.includes('2')===false){
                 document.getElementById('course2-wrap').style.display='block';
                 localStorage.setItem('course2_name',name);
                 document.getElementById('reciever2').innerHTML=name;
                 localStorage.setItem('coursecount','2');
                 courses.push('2');
-            } else if (courses.includes('3')==false){
+            } else if (courses.includes('3')===false){
                 document.getElementById('course3-wrap').style.display='block';
                 localStorage.setItem('course3_name',name);
                 document.getElementById('reciever3').innerHTML=name;
                 localStorage.setItem('coursecount','3');
                 courses.push('3');
-            } else if (courses.includes('4')==false){
+            } else if (courses.includes('4')===false){
                 document.getElementById('course4-wrap').style.display='block';
                 localStorage.setItem('course4_name',name);
                 document.getElementById('reciever4').innerHTML=name;
                 localStorage.setItem('coursecount','4');
                 courses.push('4');
-            } else if (courses.includes('5')==false){
+            } else if (courses.includes('5')===false){
                 document.getElementById('course5-wrap').style.display='block';
                 localStorage.setItem('course5_name',name);
                 document.getElementById('reciever5').innerHTML=name;
@@ -537,4 +538,3 @@ export default function PlannerPage(){
         </div>
     );
 };
-
