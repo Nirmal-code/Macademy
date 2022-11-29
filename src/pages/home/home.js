@@ -41,7 +41,7 @@ export default function HomePage(){
                     </tr>
                     <tr>
                         <td><img id='des_pic' src={clock_icon}></img><br></br>Interval Studying</td>
-                        <td>Does your week feel overwhelming with the number of tasks you have left to do? Well, it may not be as bad as you think! With the Planner Tool, you can become more organized by actively knowing what you have to do each day of the week. Often times, without having it in front of us, we feel like we have a lot more to do than we do. Well, no more!</td>
+                        <td>Find yourself taking frequent breaks? Feeling burnt out by studying for too long? Well, the interval studying will help with all of this. By using the pomodoro technique, the interval studying page will allow you to develop more effective studying habbits.</td>
                     </tr>
                 </table>
             </section>
